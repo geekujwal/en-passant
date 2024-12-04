@@ -1,0 +1,14 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <!-- Define common NuGet package versions -->
+    <PackageReference Update="Microsoft.AspNetCore.App" Version="8.0.0" />
+    <PackageReference Update="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <!-- Define common properties -->
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>
+
