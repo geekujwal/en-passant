@@ -1,4 +1,4 @@
-namespace Stella;
+namespace Lilith;
 
 public class WeatherForecast
 {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Stella.Controllers;
+namespace Lilith.Controllers;
 
 [ApiController]
 [Route("[controller]")]
