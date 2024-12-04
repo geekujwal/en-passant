@@ -13,6 +13,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 
+  <ItemGroup Label="Personal-lib">
+    <ProjectReference Include="../Stella/Core/ErrorHandling/ErrorHandling.csproj" />
+  </ItemGroup>
+
   <ItemGroup Label="Lilith">
     <ProjectReference Include="./Contracts/Contracts.csproj" />
   </ItemGroup>

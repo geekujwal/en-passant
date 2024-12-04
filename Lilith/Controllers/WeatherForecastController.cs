@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Stella.Core.ErrorHandling;
 
 namespace Lilith.Controllers;
 
@@ -21,6 +22,7 @@ public class WeatherForecastController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
+        throw new NotFoundException("Not found");
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

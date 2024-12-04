@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Stella.Core.ErrorHandling</AssemblyName>
+    <RootNamespace>Stella.Core.ErrorHandling</RootNamespace>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" />
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Http" /> -->
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" /> -->
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Mvc" /> -->
+  </ItemGroup>
+
+</Project>
