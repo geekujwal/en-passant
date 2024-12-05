@@ -1,7 +1,7 @@
 using Stella.Core.ErrorHandling;
 
-
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -18,7 +18,7 @@ if (app.Environment.IsDevelopment())
     app.UseMiddleware<ExceptionHandlingMiddleware>();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

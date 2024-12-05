@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
@@ -15,13 +14,11 @@
   </ItemGroup>
 
   <ItemGroup Label="Personal-lib">
-    <ProjectReference Include="../Stella/Core/ErrorHandling/ErrorHandling.csproj" />
-    <ProjectReference Include="Contracts\Contracts.csproj" />
-    <ProjectReference Include="Controllers\Controllers.csproj" />
+    <ProjectReference Include="../../Stella/Core/ErrorHandling/ErrorHandling.csproj" />
   </ItemGroup>
 
-  <!-- <ItemGroup Label="Lilith"> -->
-  <!--   <ProjectReference Include="./Contracts/Contracts.csproj" /> -->
-  <!-- </ItemGroup> -->
+  <ItemGroup Label="Lilith">
+    <ProjectReference Include="../Contracts/Contracts.csproj" />
+  </ItemGroup>
 
 </Project>
