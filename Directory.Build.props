@@ -1,0 +1,13 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- Set the target framework for all projects -->
+    <TargetFramework>net8.0</TargetFramework>
+    
+    <!-- Disable nullable annotations for the entire solution -->
+    <Nullable>disable</Nullable>
+
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+</Project>
+

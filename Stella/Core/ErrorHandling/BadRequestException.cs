@@ -11,6 +11,6 @@ namespace Stella.Core.ErrorHandling
         {
             AggregatedExceptions = aggregatedExceptions;
         }
-        public Dictionary<string, string> AggregatedExceptions { get; set; }
+        public Dictionary<string, string> AggregatedExceptions { get; set; } = new();
     }
 }
