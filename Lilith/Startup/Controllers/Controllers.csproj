@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>EnPassant.Lilith.Controllers</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+    <!-- <GenerateAssemblyInfo>false</GenerateAssemblyInfo> -->
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference the Contracts project -->
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="../../Stella/Core/ErrorHandling/ErrorHandling.csproj" />
+  </ItemGroup>
+
+</Project>
+
