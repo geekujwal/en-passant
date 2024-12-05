@@ -1,39 +1,28 @@
-# Use the official .NET SDK image to build the app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
-# Set the working directory in the container
+WORKDIR /src
+ENV ASPNETCORE_URLS=http://localhost:5241
+
+COPY ["Lilith/Startup/Startup.csproj", "Lilith/Startup/"]
+COPY ["Lilith/Contracts/Contracts.csproj", "Lilith/Contracts/"]
+COPY ["Stella/Core/ErrorHandling/ErrorHandling.csproj", "Stella/Core/ErrorHandling/"]
+COPY ["Stella/Stella.csproj", "Stella/"]
+
+RUN dotnet restore "Lilith/Startup/Startup.csproj"
+
+COPY . .
+
+RUN dotnet build "Lilith/Startup/Startup.csproj" -c Release -o /app/build
+
+RUN dotnet publish "Lilith/Startup/Startup.csproj" -c Release -o /app/publish
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+
 WORKDIR /app
 
-# Copy the Directory.Build.props file from the root of your project (EnPassant)
-COPY Directory.Build.props ./
+COPY --from=build /app/publish .
 
-# Copy the Lilith project file and restore dependencies
-COPY Lilith/Lilith.csproj ./Lilith/
-
-# Copy the Stella project (class library) into the container
-COPY Stella/ Stella/
-
-# Run dotnet restore to restore dependencies for the Lilith project and its dependencies
-RUN dotnet restore Lilith/Lilith.csproj
-
-# Copy the entire Lilith directory and publish it to the /app directory
-COPY Lilith/. ./Lilith/
-RUN ls -R /app/Lilith
-
-RUN dotnet publish Lilith/Lilith.csproj -c Release -o /app -v diag
-
-# Use the official .NET runtime image to run the app
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
-
-# Set the working directory in the container
-# WORKDIR /app
-
-# Copy the published app from the build image
-COPY --from=build /app .
-
-# Expose the port your app will run on
 EXPOSE 5241
 
-# Define the entry point for the container
-ENTRYPOINT ["dotnet", "Lilith.dll"]
+ENTRYPOINT ["dotnet", "Startup.dll"]
 

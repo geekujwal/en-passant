@@ -1,19 +1,18 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  # Lilith Service
   lilith:
     build:
       context: .
       dockerfile: Lilith/Dockerfile
-    container_name: lilith-app
     ports:
-      - "5241:5241"  # Expose the app on port 5000 locally (you can change this as needed)
+      - "5241:5241"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    volumes:
-      - ./Lilith:/app  # Mount the local Lilith directory for hot-reloading (optional)
+      - ASPNETCORE_URLS=http://0.0.0.0:5241
+    # networks:
+      # - app-network
 
-volumes:
-  postgres-data:
+# networks:
+#   app-network:
+#     driver: bridge
 
