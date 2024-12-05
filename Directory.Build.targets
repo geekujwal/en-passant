@@ -1,7 +1,5 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Target Name="CustomBuildTarget" AfterTargets="Build">
-    <!-- Add custom build logic here if needed -->
-    <!-- Example: Copying files, setting additional properties, etc. -->
   </Target>
 </Project>
 
