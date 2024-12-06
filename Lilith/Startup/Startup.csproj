@@ -11,10 +11,12 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Microsoft.Extensions.Options" />
   </ItemGroup>
 
-  <ItemGroup Label="Personal-lib">
+  <ItemGroup Label="Stella">
     <ProjectReference Include="../../Stella/Core/ErrorHandling/ErrorHandling.csproj" />
+    <ProjectReference Include="../../Stella/Core/DocumentStore/DocumentStore.csproj" />
   </ItemGroup>
 
   <ItemGroup Label="Lilith">

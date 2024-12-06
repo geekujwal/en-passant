@@ -6,9 +6,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>EnPassant.Lilith.Contracts</AssemblyName>
     <RootNamespace>EnPassant.Lilith.Contracts</RootNamespace>
-    <!-- <GenerateAssemblyInfo>false</GenerateAssemblyInfo> -->
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
-    <!-- <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest> -->
     <OutputType>Library</OutputType>
   </PropertyGroup>
 

@@ -7,20 +7,15 @@ namespace EnPassant.Lilith.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class UserController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
-    public WeatherForecastController()
+    public UserController()
     {
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
+    [HttpPost("RequestRegistrationToken")]
     public IEnumerable<WeatherForecast> Get()
     {
-        throw new NotFoundException("Not found");
+        throw new NotImplemented();
     }
 }
