@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lilith", "Lilith\Lilith.csproj", "{07ABCECE-7689-40FF-8C0F-C9EAEB30260D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pythagoras", "Pythagoras\Pythagoras.csproj", "{B8C05F88-755B-44BE-B089-0930B023FC6B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edison", "Edison\Edison.csproj", "{7A213D43-9162-4889-AC0F-46ECDD622A11}"
@@ -18,10 +16,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{07ABCECE-7689-40FF-8C0F-C9EAEB30260D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07ABCECE-7689-40FF-8C0F-C9EAEB30260D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07ABCECE-7689-40FF-8C0F-C9EAEB30260D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07ABCECE-7689-40FF-8C0F-C9EAEB30260D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8C05F88-755B-44BE-B089-0930B023FC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8C05F88-755B-44BE-B089-0930B023FC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8C05F88-755B-44BE-B089-0930B023FC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU

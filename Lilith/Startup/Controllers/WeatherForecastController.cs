@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using Stella.Core.ErrorHandling;
+using EnPassant.Lilith.Contracts;
 
-namespace Lilith.Controllers;
+namespace EnPassant.Lilith.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -12,17 +14,13 @@ public class WeatherForecastController : ControllerBase
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    private readonly ILogger<WeatherForecastController> _logger;
-
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController()
     {
-        _logger = logger;
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
-        Console.WriteLine("hello");
         throw new NotFoundException("Not found");
     }
 }

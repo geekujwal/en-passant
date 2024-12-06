@@ -9,10 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" />
-    <!-- <PackageReference Include="Microsoft.AspNetCore.Http" /> -->
-    <!-- <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" /> -->
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <!-- <PackageReference Include="Microsoft.AspNetCore.Mvc" /> -->
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
 </Project>
