@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using Stella.Core.ErrorHandling;
 using EnPassant.Lilith.Contracts;
 using EnPassant.Lilith.Services;
 
