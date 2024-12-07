@@ -10,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- <PackageReference Include="Swashbuckle.AspNetCore" /> -->
     <PackageReference Include="Microsoft.Extensions.Options" />
   </ItemGroup>
 
@@ -21,6 +20,7 @@
 
   <ItemGroup Label="Lilith">
     <ProjectReference Include="../Contracts/Contracts.csproj" />
+    <ProjectReference Include="../Documents/Documents.csproj" />
   </ItemGroup>
 
 </Project>

@@ -16,9 +16,9 @@ public class UserController : ControllerBase
     }
 
     [HttpPost("RequestRegistrationToken")]
-    public Task<StatusCodeResult> Ping()
+    public async Task<bool> Ping()
     {
-        _userService.TestApiAsync(default);
-        return Task.FromResult<StatusCodeResult>(new NoContentResult());
+        await _userService.TestApiAsync(default);
+        return true;
     }
 }

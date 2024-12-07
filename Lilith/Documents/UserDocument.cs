@@ -1,5 +1,6 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using Stella.Core.DocumentStore;
 
 namespace EnPassant.Lilith.Documents
 {
