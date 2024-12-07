@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using Stella.Core.ErrorHandling;
 using EnPassant.Lilith.Contracts;
+using EnPassant.Lilith.Services;
 
 namespace EnPassant.Lilith.Controllers;
 
@@ -9,13 +10,16 @@ namespace EnPassant.Lilith.Controllers;
 [Route("[controller]")]
 public class UserController : ControllerBase
 {
-    public UserController()
+    private readonly IUserService _userService;
+    public UserController(IUserService userService)
     {
+        _userService = userService;
     }
 
     [HttpPost("RequestRegistrationToken")]
-    public IEnumerable<WeatherForecast> Get()
+    public Task<StatusCodeResult> Ping()
     {
-        throw new NotImplemented();
+        _userService.TestApiAsync(default);
+        return Task.FromResult<StatusCodeResult>(new NoContentResult());
     }
 }
