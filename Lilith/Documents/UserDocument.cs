@@ -8,15 +8,7 @@ namespace EnPassant.Lilith.Documents
     {
         public string Id { get; set; }
 
-        private string _email;
-
-        public string FullName { get; set; }
-
-        public string Email
-        {
-            get => _email;
-            set => _email = value?.ToLowerInvariant().Trim();
-        }
+        public string Username { get; set; }
 
         public string Hash { get; set; }
 

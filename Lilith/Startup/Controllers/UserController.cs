@@ -16,9 +16,8 @@ public class UserController : ControllerBase
     }
 
     [HttpPost("RequestRegistrationToken")]
-    public async Task<bool> Ping()
+    public async Task RequestRegistrationTokenAsync([FromBody] RequestRegistrationTokenRequest request, CancellationToken cancellationToken)
     {
-        await _userService.TestApiAsync(default);
-        return true;
+        await _userService.RegisterUser(request, cancellationToken);
     }
 }
