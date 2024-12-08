@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>EnPassant.Pythagoras.Documents</AssemblyName>
+    <RootNamespace>EnPassant.Pythagoras.Documents</RootNamespace>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup Label="Stella">
+    <ProjectReference Include="../../Stella/Core/DocumentStore/DocumentStore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Label="Pythagoras">
+    <ProjectReference Include="../Contracts/Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

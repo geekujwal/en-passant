@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pythagoras", "Pythagoras\Pythagoras.csproj", "{B8C05F88-755B-44BE-B089-0930B023FC6B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edison", "Edison\Edison.csproj", "{7A213D43-9162-4889-AC0F-46ECDD622A11}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lilith", "Lilith", "{64F67FB8-EF91-457F-917D-8C18FC200489}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Startup", "Lilith\Startup\Startup.csproj", "{E7E13BC9-9822-4AE6-B6C1-7BFB3DE05754}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pythagoras", "Pythagoras", "{80681BCA-4408-4355-8008-DEAF2AB99BD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Startup", "Pythagoras\Startup\Startup.csproj", "{607114CE-8279-4108-971E-F1D9FE40E6E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +22,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8C05F88-755B-44BE-B089-0930B023FC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8C05F88-755B-44BE-B089-0930B023FC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8C05F88-755B-44BE-B089-0930B023FC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8C05F88-755B-44BE-B089-0930B023FC6B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A213D43-9162-4889-AC0F-46ECDD622A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A213D43-9162-4889-AC0F-46ECDD622A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A213D43-9162-4889-AC0F-46ECDD622A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -32,8 +30,13 @@ Global
 		{E7E13BC9-9822-4AE6-B6C1-7BFB3DE05754}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7E13BC9-9822-4AE6-B6C1-7BFB3DE05754}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7E13BC9-9822-4AE6-B6C1-7BFB3DE05754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607114CE-8279-4108-971E-F1D9FE40E6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607114CE-8279-4108-971E-F1D9FE40E6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607114CE-8279-4108-971E-F1D9FE40E6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607114CE-8279-4108-971E-F1D9FE40E6E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E7E13BC9-9822-4AE6-B6C1-7BFB3DE05754} = {64F67FB8-EF91-457F-917D-8C18FC200489}
+		{607114CE-8279-4108-971E-F1D9FE40E6E0} = {80681BCA-4408-4355-8008-DEAF2AB99BD9}
 	EndGlobalSection
 EndGlobal
